@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./pages/index.css" />
+</head>
+
+<body class="root">
+  <main class="page">
+    <!--Шапка сайта-->
+    <header class="header">
+      <img src="./images/header/__logo/header__logo.svg" alt="Логотип сайта" class="header__logo" />
+      <div class="header__line"></div>
+    </header>
+    <!--Основной контент-->
+    <section class="content">
+      <section class="profile">
+        <div class="profile__vizit">
+          <img src="./images/profile/__avatar/profile__avatar.png" alt="Фото профиля" class="profile__avatar" />
+          <div class="profile__info">
+            <div class="profile__content">
+              <h1 class="profile__content_name">Жак-Ив Кусто</h1>
+              <button class="profile__content_change"></button>
+            </div>
+            <p class="profile__specialization">Исследователь океана</p>
+          </div>
+        </div>
+        <button class="profile__add"></button>
+      </section>
+      <section class="elements">
+        <div class="element">
+          <img src="./images/elements/element_one.png" alt="Фото Карачаевска" class="element__image" />
+          <div class="element__footer">
+            <p class="element__footer_text">Карачаевск</p>
+            <button class="element__footer_button"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img src="./images/elements/element_two.png" alt="Фото Эльбрус'" class="element__image" />
+          <div class="element__footer">
+            <p class="element__footer_text">Гора Эльбрус</p>
+            <button class="element__footer_button"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img src="./images/elements/element_three.png" alt="Фото Домбай" class="element__image" />
+          <div class="element__footer">
+            <p class="element__footer_text">Домбай</p>
+            <button class="element__footer_button"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img src="./images/elements/element_four.png" alt="Фото Эльбрус" class="element__image" />
+          <div class="element__footer">
+            <p class="element__footer_text">Гора Эльбрус</p>
+            <button class="element__footer_button"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img src="./images/elements/element_five.png" alt="Домбай" class="element__image" />
+          <div class="element__footer">
+            <p class="element__footer_text">Домбай</p>
+            <button class="element__footer_button"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img src="./images/elements/element_six.png" alt="Карачаево-Черкесск" class="element__image" />
+          <div class="element__footer">
+            <p class="element__footer_text">Карачаево-Черкессия</p>
+            <button class="element__footer_button"></button>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!--Подвал-->
+    <footer class="footer">© 2020 Mesto Russia</footer>
+  </main>
+  <section class="popup popup_opened">
+    <div class="popup__body">
+      <button class="popup__button"></button>
+      <form class="popup__form">
+        <h2 class="popup__form_header">Редактировать профиль</h2>
+        <input class="popup__form_field" value="Жак-Ив Кусто">
+        <input class="popup__form_specialization" value="Исследователь океана">
+        <button class="popup__form_button">Сохранить</button>
+      </form>
+    </div>
+  </section>
+  <script src="./script/index.js"></script>
+</body>
+
+</html>
