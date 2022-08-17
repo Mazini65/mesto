@@ -1,0 +1,9 @@
+.element_button {
+  background: transparent;
+  padding: 0;
+  background-image: url(../../../../images/elements/elements__footer_button.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-style: none;
+  min-width: 22px;
+}

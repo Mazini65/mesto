@@ -1,35 +1,35 @@
 let page = document.querySelector('.page');
 console.log(page);
-let changeContent = page.querySelector('.profile__content_change');
-console.log(changeContent);
+let changeProfile = page.querySelector('.profile_change');
+console.log(changeProfile);
 let popup = document.querySelector('.popup');
 console.log(popup);
 let openedPopup = document.querySelector('.popup_opened');
 console.log(openedPopup);
-let closePopup = popup.querySelector('.popup__button');
+let closePopup = popup.querySelector('.popup_button');
 console.log(closePopup);
 
 let togglePopup = function () {
     popup.classList.toggle('popup_opened');
 }
 
-changeContent.addEventListener('click', togglePopup);
+changeProfile.addEventListener('click', togglePopup);
 closePopup.addEventListener('click', togglePopup);
 
-let formElement = document.querySelector('.popup__form');
-let formPopupField = formElement.querySelector('.popup__form_field');
-let formPopupSpecialization = formElement.querySelector('.popup__form_specialization');
+let formElement = document.querySelector('.popup_form');
+let fieldPopup = formElement.querySelector('.popup_field');
+let specializationPopup = formElement.querySelector('.popup_specialization');
 
 function formSubmitHandler (evt) {
     evt.preventDefault();
 
-    let name = formPopupField.value;
-    let specialization = formPopupSpecialization.value;
+    let name = fieldPopup.value;
+    let specialization = specializationPopup.value;
 
-    let nameProfileContent = page.querySelector('.profile__content_name')
-    let specializationProfile = page.querySelector('.profile__specialization')
+    let nameProfile = page.querySelector('.profile_name')
+    let specializationProfile = page.querySelector('.profile_specialization')
 
-    nameProfileContent.textContent = name;
+    nameProfile.textContent = name;
     specializationProfile.textContent = specialization;
 }
 

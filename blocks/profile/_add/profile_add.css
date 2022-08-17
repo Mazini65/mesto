@@ -1,0 +1,21 @@
+.profile_add {
+  background: transparent;
+  background-image: url(../../../images/profile/__add/profile__add.svg);
+  background-size: 22px 22px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  padding: 0;
+  min-width: 150px;
+  min-height: 50px;
+}
+
+@media screen and (max-width: 320px) {
+  .profile_add {
+    background-size: 16px 16px;
+    min-width: 100%;
+    min-height: 50px;
+  }
+}

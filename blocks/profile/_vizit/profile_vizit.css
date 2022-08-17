@@ -1,0 +1,10 @@
+.profile_vizit {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 320px) {
+  .profile_vizit {
+    flex-direction: column;
+  }
+}
