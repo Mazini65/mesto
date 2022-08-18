@@ -1,0 +1,17 @@
+.popup__body {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 32px 330px;
+  grid-template-columns: 430px 32px;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+
+@media screen and (max-width: 320px) {
+  .popup__body {
+    row-gap: 16px;
+    column-gap: 0;
+    grid-template-rows: 20px 322px;
+    grid-template-columns: 262px 20px;
+  }
+}

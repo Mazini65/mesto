@@ -1,0 +1,20 @@
+.popup__save {
+  background: #000000;
+  color: #fff;
+  margin: 48px auto 0;
+  min-width: 358px;
+  min-height: 50px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  border: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .popup__save {
+    margin: 45px auto 0;
+    min-width: 238px;
+    min-height: 46px;
+  }
+}
