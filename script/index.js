@@ -4,13 +4,13 @@ let changeProfile = page.querySelector('.profile__change');
 console.log(changeProfile);
 let popup = document.querySelector('.popup');
 console.log(popup);
-let openedPopup = document.querySelector('.popup__opened');
+let openedPopup = document.querySelector('.popup_opened');
 console.log(openedPopup);
 let closePopup = popup.querySelector('.popup__button');
 console.log(closePopup);
 
 let togglePopup = function () {
-    popup.classList.toggle('popup__opened');
+    popup.classList.toggle('popup_opened');
 }
 
 changeProfile.addEventListener('click', togglePopup);
