@@ -7,9 +7,15 @@
   margin: 51px auto 66px;
 }
 
+@media screen and (max-width: 880px) {
+  .elements {
+    max-width: 590px;
+    justify-items: center;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .elements {
-    row-gap: 20px;
     max-width: 282px;
     margin: 36px auto 48px;
   }
