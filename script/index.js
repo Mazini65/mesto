@@ -5,15 +5,15 @@ const changeProfile = page.querySelector('.profile__change');
 const popup = document.querySelector('.popup');
 const buttonPopup = popup.querySelector('.popup__button');
 const formElement = popup.querySelector('.popup__form');
-const namePopup = formElement.querySelector('.popup__field_name');
-const specializationPopup = formElement.querySelector('.popup__field_specialization');
+const namePopup = formElement.querySelector('.popup__field_name_input');
+const specializationPopup = formElement.querySelector('.popup__field_specialization_input');
 
 // создаем функции по открытию popup
 
 const openedPopup = function () {
     popup.classList.add('popup_opened');
-    namePopup = nameProfile.textContent;
-    specializationPopup = specializationProfile.textContent;
+    namePopup.value = nameProfile.textContent;
+    specializationPopup.value = specializationProfile.textContent;
 }
 
 // создаем функции по закрытию popup

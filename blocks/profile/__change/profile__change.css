@@ -17,7 +17,7 @@
   opacity: 0.6;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 880px) {
   .profile__change {
     background-size: 7.5px 7.5px;
     min-width: 18px;
