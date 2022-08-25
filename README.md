@@ -12,4 +12,4 @@
 
 ---
 
-Ссылка на проект https://mazini65.github.io/mesto/index.html
+Ссылка на проект https://mazini65.github.io/mesto/
