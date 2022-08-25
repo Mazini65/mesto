@@ -1,36 +1,38 @@
-let page = document.querySelector('.page');
-console.log(page);
-let changeProfile = page.querySelector('.profile__change');
-console.log(changeProfile);
-let popup = document.querySelector('.popup');
-console.log(popup);
-let openedPopup = document.querySelector('.popup_opened');
-console.log(openedPopup);
-let closePopup = popup.querySelector('.popup__button');
-console.log(closePopup);
+const page = document.querySelector('.page');
+const nameProfile = page.querySelector('.profile__name');
+const specializationProfile = page.querySelector('.profile__specialization');
+const changeProfile = page.querySelector('.profile__change');
+const popup = document.querySelector('.popup');
+const buttonPopup = popup.querySelector('.popup__button');
+const formElement = popup.querySelector('.popup__form');
+const namePopup = formElement.querySelector('.popup__field_name');
+const specializationPopup = formElement.querySelector('.popup__field_specialization');
 
-let togglePopup = function () {
-    popup.classList.toggle('popup_opened');
+// создаем функции по открытию popup
+
+const openedPopup = function () {
+    popup.classList.add('popup_opened');
+    namePopup = nameProfile.textContent;
+    specializationPopup = specializationProfile.textContent;
 }
 
-changeProfile.addEventListener('click', togglePopup);
-closePopup.addEventListener('click', togglePopup);
+// создаем функции по закрытию popup
 
-let formElement = document.querySelector('.popup__form');
-let fieldPopup = formElement.querySelector('.popup__field');
-let specializationPopup = formElement.querySelector('.popup__specialization');
+const closedPopup = function () {
+    popup.classList.remove('popup_opened');
+}
 
-function formSubmitHandler (evt) {
+// создаем функцию по добавление полей из popup в profile
+
+function submitFormHandler (evt) {
     evt.preventDefault();
-
-    let name = fieldPopup.value;
-    let specialization = specializationPopup.value;
-
-    let nameProfile = page.querySelector('.profile__name')
-    let specializationProfile = page.querySelector('.profile__specialization')
-
-    nameProfile.textContent = name;
-    specializationProfile.textContent = specialization;
+    nameProfile.textContent = namePopup.value;
+    specializationProfile.textContent = specializationPopup.value;
+    closedPopup();
 }
 
-formElement.addEventListener('submit', formSubmitHandler);
+
+
+changeProfile.addEventListener('click', openedPopup);
+buttonPopup.addEventListener('click', closedPopup);
+formElement.addEventListener('submit', submitFormHandler);

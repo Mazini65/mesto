@@ -9,7 +9,11 @@
   border: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 0;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
+}
+
+.popup__field:last-of-type {
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 880px) {
